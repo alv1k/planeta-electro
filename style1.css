@@ -1,0 +1,55 @@
+.grid * {
+    background-color: rgb(63, 161, 128);
+    padding: 20px;
+    border: 1px solid blue;
+    text-align: center;
+}
+
+/* сетка */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(50px,1fr)); на весь экран растягивает*/ 
+    /* grid-template-columns: repeat(auto-fill, minmax(50px,1fr)); без растяжки*/
+
+    grid-template-rows: 100px 100px ;
+    grid-column-gap: 10px; 
+    grid-row-gap: 10px;
+    grid-gap: 10px 10px;
+
+    /* grid-auto-flow: column; */
+
+    grid-auto-rows: 200px;
+    grid-auto-columns: 100px;
+}
+
+.grid > div:nth-child(1){ 
+    /* перенос дива  */
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    grid-column: 2 / 4;
+    
+    grid-row: 1 / 2;
+}
+
+.grid > div:nth-child(2){
+    grid-row-start: 2;
+    grid-row-end: 1;
+
+    /* grid-column: 2 / 4; */
+    grid-row: 1;
+}
+.grid > div:nth-child(3){
+    grid-column: 2 /4 ;
+    grid-row: 2 / 4;
+}
+
+
+
+
+main > div:nth-child(3) > div:nth-child(4) > :nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+}

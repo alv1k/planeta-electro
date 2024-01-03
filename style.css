@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+        url("Montserrat-VariableFont_wght.ttf");
+}
+html{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+}
+/* mobile-first */
+
+header{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: white;
+
+}
+@media (min-width: 360px) {
+    header{
+        background: radial-gradient(ellipse at center,  rgb(22,65,148) 80%,rgb(22,65,148) 80%,rgb(22,65,148) 90%,#23bc2b00 47%,#23bc2b00 48%);
+        background-position-y: -20px;
+        background-repeat: no-repeat;
+    }
+    header h2, header h3 {
+      font-size: 1.3rem;
+    }
+}
+@media (min-width: 600px) {
+    header{
+        /* background: radial-gradient(ellipse at center,  
+        rgb(22,65,148) 80%,
+        rgba(255, 255, 255, 0) 81%); */
+        background-image: url(Ellipse1.png);
+        background-size: 100% 100%;
+
+        /* background-position-y: 20px; */
+        background-repeat: no-repeat;
+    }
+    header h2, header h3 {
+      font-size: 2rem;
+    }
+}
+main{
+    background-color: rgb(255, 255, 255);
+    margin-top: -3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.orderInfo{
+    border-bottom: 1px solid rgb(187, 186, 186);
+    border-image-source:url("dashed7.png");  
+    border-image-slice: 1; 
+    border-image-repeat:space;
+}
+.orderDetails__text{
+    font-weight: 800;
+}
+.orderDetails__item p {
+    margin-top: 0.2rem;
+}
+
+.summary p{
+    margin-top: 0.2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.summary .summary__final{
+    font-size: 1.6rem;
+    margin-top: -0.3rem;
+}
+
+.orderInformation__boldText{
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+footer{
+    /* background-color: rgb(255, 140, 0); */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    /* text-align: justify; */
+}

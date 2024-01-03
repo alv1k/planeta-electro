@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информация о заказе</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="text-center col-12 pb-5 pt-2 pb-md-5 pt-md-2 col-md-12">
+        <img class="d-none d-md-inline" src="logo2.png" alt="">
+        <img class="d-inline d-md-none w-md-50" src="logo.png" alt="">
+        
+        <h2 class="fw-bold mt-2"><span class="user_name">Алена</span>, Здравствуйте!</h2>
+        <h3 class="mt-3 fs-5">Мы получили Ваш заказ</h3>
+    </header>
+    <main class="col-10 col-md-6 mx-md-auto p-2 mx-auto rounded-4">
+        <!-- order container -->
+        <div class="orderInfo text-center py-3 d-md-flex">
+            <h1 class="fs-5 fw-bold ms-md-3">ЗАКАЗ № <span class="orderInfo__orderNumber">129</span></h1>
+            <p class="text-secondary ms-md-auto me-md-3">от <span class="orderInfo__orderDate"> 24.03.2023 г.</span></p>
+        </div>
+
+        <div class="orderDetails p-1 mt-3">
+            <p class="orderDetails__text text-md-center">Состав заказа</p>
+            <div class="orderDetails__item d-flex border-bottom border-secondary-subtle mt-md-3 d-md-inline">
+                <div class="d-none d-md-flex mt-md-3 bg-light p-2 text-end">
+                    <!-- md table (исчезает в моб.версии) -->
+                    <div class="col-6 text-start">
+                        <p>Товар</p>
+                    </div>
+                    <div class="col-2">
+                        <p>Количество</p>
+                    </div>
+                    <div class="col-2">
+                        <p>Цена</p>
+                    </div>
+                    <div class="col-2">
+                        <p>Сумма</p>
+                    </div>
+                </div>
+                <!-- 1st item -->
+                <div class="d-none d-md-flex mt-md-3 p-2 text-end border-bottom border-secondary-subtle">
+                    <div class="col-6 text-start d-flex">
+                        <img width="col-12" src="item1.png" alt="">
+                        <div class="ps-2">
+                            <p>Штукатурка гипсовая универсальная Ротбанд KNAUF 30 кг.</p>
+                            <p class="text-secondary">Код: <span class="itemNumberTag">2862</span></p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <p class="fw-bold">10 шт</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="fw-bold">780 &#8381;</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="text-decoration-line-through text-secondary">10 000 &#8381;</p>
+                            <p class="fw-bold">7,800 &#8381;</p>
+                    </div>
+                </div>
+
+                <!-- item 1 for mobile -->
+                <div class="col-3 d-md-none d-block">
+                    <img width="col-12" src="item1.png" alt="">
+                </div>
+                <div class="col-9 ps-2 d-md-none d-block">
+                    <p>Штукатурка гипсовая универсальная Ротбанд KNAUF 30 кг.</p>
+                    
+                    <div class="d-flex ">
+                        <div class="col">
+                            <p class="text-secondary">Код: <span class="itemNumberTag">2862</span></p>
+                            <p class="text-secondary d-md-none">Количество:</p>
+                            <p class="text-secondary d-md-none">Цена:</p>
+                            <p class="text-secondary fw-bold d-md-none">Сумма:</p>
+                            <p>&nbsp;</p>
+                        </div>
+                        <div class="col-4 ms-auto text-end">
+                            <p>&nbsp;</p>
+                            <p class="fw-bold">10 шт</p>
+                            <p class="fw-bold">780 &#8381;</p>
+                            <p class="text-decoration-line-through text-secondary">10 000 &#8381;</p>
+                            <p class="fw-bold">7,800 &#8381;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="orderDetails__item d-flex border-bottom border-secondary-subtle mt-4 d-md-inline">
+                <!-- 2nd item -->
+                <div class="d-none d-md-flex mt-md-3 p-2 text-end border-bottom border-secondary-subtle">
+                    <div class="col-6 text-start d-flex">
+                        <img width="col-12" src="item2.png" alt="">
+                        <div class="ps-2">
+                            <p>Кисть флейцевая ″Фасад″ 100х12 мм. Матрикс</p>
+                            <p class="text-secondary">Код: <span class="itemNumberTag">2862</span></p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <p class="fw-bold">10 шт</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="fw-bold">198 &#8381;</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="text-decoration-line-through text-secondary">10 000 &#8381;</p>
+                            <p class="fw-bold">7,800 &#8381;</p>
+                    </div>
+                </div>
+
+
+
+                <!-- item 2 for mobile -->
+                <div class="col-3 d-md-none d-block">
+                    <img width="col-12" src="item2.png" alt="">
+                </div>
+                <div class="col-9 ps-2 d-md-none d-block">
+                    <p>Кисть флейцевая ″Фасад″ 100х12 мм. Матрикс</p>
+                    
+                    <div class="d-flex ">
+                        <div class="col">
+                            <p class="text-secondary">Код: <span class="itemNumberTag">2862</span></p>
+                            <p class="text-secondary">Количество:</p>
+                            <p class="text-secondary">Цена:</p>
+                            <p class="text-secondary fw-bold">Сумма:</p>
+                            <p>&nbsp;</p>
+                        </div>
+                        <div class="col-4 ms-auto text-end">
+                            <p>&nbsp;</p>
+                            <p class="fw-bold">10 шт</p>
+                            <p class="fw-bold">198 &#8381;</p>
+                            <p class="text-decoration-line-through text-secondary">10 000 &#8381;</p>
+                            <p class="fw-bold">7,800 &#8381;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary d-flex mt-3 p-md-1">
+                <!-- summary -->
+                <div class="col-8">
+                    <p class="">Товаров в заказе: </p>
+                    <p>Товары на сумму:</p>
+                    <p>Скидка: </p>
+                    <p class="">Итого: </p>
+                </div>
+                <div class="col-4 ms-auto text-end">
+                    <p class="text-secondary">20 шт</p>
+                    <p class="text-secondary">9 780 ₽</p>
+                    <p> -<span class="text-danger">2 000 ₽</span> </p>
+                    <p style="font-size: 1.6rem;" class="summary__final fw-bold">7 780₽</p>
+                </div>
+            </div>
+            <div class="mt-3 bg-light p-3">
+                <!-- order information -->
+                <p class="fw-bold text-md-center ">Информация о заказе</p>
+                <div class="mt-3 d-md-flex">
+                    <p class="orderInformation__boldText text-secondary col-6 col-md-4">Контактное лицо:</p>
+                    <p class="col-6 col-md-8">Спиридонова Алена Владимировна</p>
+                </div>
+                <div class="mt-3 d-md-flex">
+                    <p class="orderInformation__boldText text-secondary col-6 col-md-4">Телефон:</p>
+                    <p class="col-6 col-md-8">8-924-869-86-96</p>
+                </div>
+                <div class="mt-3 d-md-flex">
+                    <p class="orderInformation__boldText text-secondary col-6 col-md-4">E-mail:</p>
+                    <p class="col-6 col-md-8">a.buimistrova@gk-venture.ru</p>
+                </div>
+                <div class="mt-3 d-md-flex">
+                    <p class="orderInformation__boldText text-secondary col-6 col-md-4">Адрес: </p>
+                    <p class="col-6 col-md-8">Вилюйский тракт 3 км 1/4</p>
+                </div>
+                <div class="mt-3 d-md-flex">
+                    <p class="orderInformation__boldText text-secondary col-6 col-md-4">Статус: </p>
+                    <p class="text-danger col-6 col-md-8">Не оплачен</p>
+                </div>
+                <div class="mt-3 d-md-flex">
+                    <p class="orderInformation__boldText text-secondary col-6 col-md-4">Срок резерва: </p>
+                    <p class="col-6 col-md-8">26.03.2023 г. </p>
+                </div>
+            </div>
+
+            <div class="mt-3 bg-light">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59876.6025986839!2d129.6425087432196!3d62.03191245725762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5bf64bb622e9d8fb%3A0xf9e82dc6aec9774e!2z0J_Qu9Cw0L3QtdGC0LAg0K3Qu9C10LrRgtGA0L4!5e0!3m2!1sru!2sru!4v1703680168525!5m2!1sru!2sru" width="100%" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div class="p-3">
+                    <div class="d-flex">
+                        <div class="col-1">
+                            <img src="location.png" alt="">
+                        </div>
+                        <div class="col-11 ps-2">
+                            <p>г.Якутск,  ул. Бестужева-Марлинского, 64/1</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <div class="col-1">
+                            <img src="time.png" alt="">
+                        </div>
+                        <div class="col-11 ps-2 pb-3">
+                            <ul class="list-inline mb-md-1">
+                                <li class="list-inline-item text-secondary">Понедельник-пятница</li>
+                                <li class="list-inline-item">9:00-19:00, без перерыва</li>
+                            </ul>
+                            <ul class="list-inline mb-md-1">
+                                <li class="list-inline-item text-secondary">
+                                    Суббота
+                                </li>
+                                <li class="list-inline-item">
+                                    10:00-19:00, без перерыва
+                                </li>
+                            </ul>
+                            
+                            <ul class="list-inline mb-md-1">
+                                <li class="list-inline-item text-secondary">
+                                    Воскресенье
+                                </li>
+                                <li class="list-inline-item">
+                                    10:00-18:00, без перерыва
+                                </li>
+                            </ul>
+                            <p class="text-success">Открыто</p>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="fw-bold" style="font-size: 1.2rem;">Найди нас</p>
+                <div class="mt-3 ">
+                    <img class="" src="vk.png" alt="">
+                    <img class="ms-4" src="tg.png" alt="">
+                    <img class="ms-4" src="youtube.png" alt="">
+                </div>
+            </div>
+            <div class="bg-light mt-3 p-3 d-md-flex">
+                <div class=" d-flex d-md-flex col-12 col-md-6">
+                    <div class="col-1">
+                        <img src="home.png" alt="">
+                    </div>
+                    <div class="col-11 ps-2">
+                        <p class="fw-bold fs-6">Список магазинов</p>
+                        <p>ул. Автодорожная, 11а</p>
+                        <p>ул. Автодорожная, 8 (склад)</p>
+                        <p>ул. ЯЭК Хатынг-юрях</p>
+                    </div>
+                </div>
+                <div class="mt-3 mt-md-0 d-flex d-md-flex col-12 col-md-6">
+                    <div class="col-1">
+                        <img src="phone.png" alt="">
+                    </div>
+                    <div class="col-11 ps-2 ps-md-0">
+                        <p class="fw-bold fs-6">Номер Call-центра:</p>
+                        <p class="mt-1 mt-md-3">+7(4112)-455-111</p>
+                       
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+
+    </main>
+    <footer class="col-10 p-2 mx-auto text-secondary ">
+        <div class="col-12 text-center">
+            <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                    Вы получили это письмо, потому что являетесь
+                </li>
+                <li class="list-inline-item">
+                    клиентом магазина unicom-ykt.ru. 
+                </li>
+            </ul>
+            <ul class="list-inline mt-0">
+                <li class="list-inline-item">
+                    Вы можете отписаться от рассылки (ссылка на 
+                </li>
+                <li class="list-inline-item">
+                    кнопку для отписки)
+                </li>
+            </ul>
+            
+            
+        </div>
+    </footer>
+</body>
+</html>
